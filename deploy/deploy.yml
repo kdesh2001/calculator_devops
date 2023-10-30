@@ -8,3 +8,9 @@
       docker_image:
         name: kdesh2001/calculator_devops:latest
         source: pull
+    - name: Start docker service
+      service:
+        name: docker
+        state: started
+    - name: Creating container
+      shell: docker create -it --name Calculator kdesh2001/calculator_devops
