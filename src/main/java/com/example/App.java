@@ -48,6 +48,7 @@ public class App
             }
 
         }while(run==1);
+        System.out.println("Finished.");
         inp.close();
     }
     public static double sqrt(double num){
